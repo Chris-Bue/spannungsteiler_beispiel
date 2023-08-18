@@ -28,7 +28,7 @@ void loop()
   // MAX 6V 
   // Spannungteiler Vin -> R1 2700 Ohm -> Messpunkt -> R2 3300 Ohm -> Gnd 
   // 3,3 V bei 6 V  
-  // 1 Bit => 13,45 / 1023 => 0,0131476
+  // 1 Bit => 6,00 / 1023 => 0,0058651
   val = adc.readADC(1); // read Channel 0 from MCP3008 ADC (pin 2)
   Serial.print("Channel 1: ");
   Serial.println(val * 0.0058651);
